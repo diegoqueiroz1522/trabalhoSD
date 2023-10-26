@@ -10,7 +10,8 @@ services:
 
   backend:
     depends_on:
-      - db
+      - db1
+      - db2
     build: ./backend
     ports:
       - 3001:3001

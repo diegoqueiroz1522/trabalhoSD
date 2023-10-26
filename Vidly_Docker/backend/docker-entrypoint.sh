@@ -1,10 +1,12 @@
 #!/bin/sh
 
 echo "Waiting for MongoDB to start..."
-./wait-for db:27017 
+./wait-for db1:27017 
+./wait-for db2:27017 
 
 echo "Migrating the databse..."
-npm run db:up 
+npm run db1:up 
+npm run db2:up 
 
 echo "Starting the server..."
 npm start 

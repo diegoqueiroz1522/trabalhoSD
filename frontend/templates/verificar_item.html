@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar Item</title>
+</head>
+<body>
+    <h1>Verificar Item</h1>
+
+    <form action="/verificar_item" method="GET">
+        <label for="nome_item">Nome do item:</label>
+        <input type="text" name="nome_item" id="nome_item" required>
+        <button type="submit">Verificar</button>
+    </form>
+
+    {% if resultado %}
+        <h2>Resultado da Verificação: {{ resultado }}</h2>  
+    {% endif %}
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar Item</title>
+</head>
+<body>
+    <h1>Verificar Item</h1>
+    <form method="POST">
+        <label for="item">Item a verificar:</label>
+        <input type="text" id="item" name="item">
+        <input type="submit" value="Verificar">
+    </form>
+</body>
+</html>

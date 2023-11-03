@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmes e Comidas</title>
+</head>
+<body>
+    <h1>Lista de Comidas</h1>
+    <ul>
+        {% for comida in comidas %}
+        <li>{{ comida[1] }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Adicionar Filme</h2>
+    <form method="POST" action="/adicionar_comida">
+        <input type="text" name="nome_comida" placeholder="Nome da comida" required>
+        <button type="submit">Adicionar</button>
+    </form>
+</body>
+</html>

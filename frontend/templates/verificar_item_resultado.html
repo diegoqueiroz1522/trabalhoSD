@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado da Verificação</title>
+</head>
+<body>
+    <h1>Resultado da Verificação</h1>
+    <p>O item "<strong>{{ item }}</strong>" está presente:</p>
+    <p>Em comidas: {% if presente_em_comidas %}Sim{% else %}Não{% endif %}</p>
+    <p>Em filmes: {% if presente_em_filmes %}Sim{% else %}Não{% endif %}</p>
+    <a href="{{ url_for('index_verificar_item') }}">Voltar</a>
+</body>
+</html>
